@@ -32,14 +32,16 @@ const Select = ({ label, value, children, ...delegated }) => {
   );
 };
 
+
+// When you're in Flex layout, use `align-items` instead:
 const Wrapper = styled.label`
-  display: flex
+  display: flex;
+  align-items: baseline;
 `;
 
 const VisibleLabel = styled.span`
   color: ${COLORS.gray[700]};
   margin-right: 16px;
-  padding: 12px 0
 `;
 
 const SelectWrapper = styled.div`

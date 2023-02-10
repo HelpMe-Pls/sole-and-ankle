@@ -45,21 +45,23 @@ const ShoeIndex = ({ sortId, setSortId }) => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-end;
-  gap: 69px
+  align-items: baseline;
+  gap: 32px
 `;
 
+// If you're in Flex layout, prioritize `flex-basis` over `width || height`
 const LeftColumn = styled.div`
-
+  flex-basis: 248px;
 `;
 
 const MainColumn = styled.div`
   flex: 1
 `;
 
+// Use `align-items: baseline;` instead of `margin-top`
 const Header = styled.header`
-  margin-top: -10px;
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
 `;
 

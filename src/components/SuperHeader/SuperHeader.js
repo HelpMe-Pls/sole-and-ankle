@@ -22,6 +22,7 @@ const SuperHeader = () => {
   );
 };
 
+// We could use `height` & `align-items: center` here instead of setting the `padding` for the children
 const Wrapper = styled.div`
   font-size: 0.875rem;
   color: ${COLORS.gray[300]};
